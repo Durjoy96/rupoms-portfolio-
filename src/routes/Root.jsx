@@ -1,10 +1,17 @@
 import React from "react";
+import Navbar from "../components/Header/Navbar/Navbar";
+import { Outlet } from "react-router-dom";
 
 const Root = () => {
   return (
-    <div>
-      <h1>Just record and rest leave on me</h1>
-    </div>
+    <>
+      <div className="min-h-screen">
+        <div className="z-50 lg:sticky lg:top-0">
+          <Navbar></Navbar>
+        </div>
+        <Outlet></Outlet>
+      </div>
+    </>
   );
 };
 
