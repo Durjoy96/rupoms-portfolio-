@@ -15,6 +15,9 @@ export default {
         primary: "rgb(59 130 246)",
         "primary-content": "#ffffff",
       },
+      boxShadow: {
+        custom: "0 10px 200px #dfe5eb",
+      },
     },
   },
   plugins: [require("daisyui")],

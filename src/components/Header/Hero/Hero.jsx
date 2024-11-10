@@ -24,11 +24,15 @@ const Hero = () => {
             </div>
           </div>
           <div>
-            <img
-              className="rounded-xl"
-              src="https://placehold.co/550x350"
-              alt=""
-            />
+            <iframe
+              className="rounded-xl skeleton h-[350px] w-[550px] shadow-lg"
+              src="https://www.youtube.com/embed/ijw_1AuCTes?si=4IeHBeMgyecHbDBc?rel=0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </div>

@@ -1,12 +1,13 @@
 import React from "react";
 import Hero from "../components/Header/Hero/Hero";
 import GridLines from "react-gridlines";
+import About from "../components/About/About";
 
 const Home = () => {
   return (
     <div>
       {/* Grid lines Background */}
-      <div className="absolute -top-2 left-0 right-0 z-0">
+      <div className="absolute -top-2 left-0 right-0 z-0 bg-fixed">
         <GridLines
           className="grid-area"
           cellWidth={180}
@@ -20,6 +21,7 @@ const Home = () => {
         </GridLines>
       </div>
       <Hero></Hero>
+      <About></About>
     </div>
   );
 };
