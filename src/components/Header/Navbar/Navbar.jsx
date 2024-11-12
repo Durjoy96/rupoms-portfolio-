@@ -15,7 +15,23 @@ const Navbar = () => {
       <nav className="max-w-screen-xl mx-auto px-5 py-3 relative z-10">
         <div className="navbar rounded-full lg:bg-base-100/70 lg:backdrop-blur-lg lg:px-3 lg:py-3">
           <div className="navbar-start">
-            <div className="dropdown">
+            <Link
+              to="/"
+              className="text-lg md:text-xl font-bold text-base-content lg:ml-4"
+            >
+              Rupom Sarker
+            </Link>
+          </div>
+          <div className="navbar-center hidden lg:flex">
+            <ul className="menu menu-horizontal px-1 space-x-6">
+              {pages.map((page, idx) => (
+                <NavPage key={idx} page={page} />
+              ))}
+            </ul>
+          </div>
+          <div className="navbar-end gap-1">
+            <Button text="Book a call" isPrimary={true}></Button>
+            <div className="dropdown dropdown-end">
               <div
                 tabIndex={0}
                 role="button"
@@ -23,7 +39,7 @@ const Navbar = () => {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 absolute left-0 top-1/2 -translate-y-1/2"
+                  className="h-7 w-7 absolute right-0 top-1/2 -translate-y-1/2"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -45,22 +61,6 @@ const Navbar = () => {
                 ))}
               </ul>
             </div>
-            <Link
-              to="/"
-              className="text-lg md:text-xl font-bold text-base-content lg:ml-4"
-            >
-              Rupom Sarker
-            </Link>
-          </div>
-          <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1 space-x-6">
-              {pages.map((page, idx) => (
-                <NavPage key={idx} page={page} />
-              ))}
-            </ul>
-          </div>
-          <div className="navbar-end">
-            <Button text="Book a call" isPrimary={true}></Button>
           </div>
         </div>
       </nav>
