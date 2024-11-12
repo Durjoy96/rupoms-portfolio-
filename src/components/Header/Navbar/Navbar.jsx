@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import NavPage from "./NavPage";
 import Button from "../../Buttons/Button";
@@ -9,6 +9,8 @@ const Navbar = () => {
     { path: "/portfolio", name: "Portfolio" },
     { path: "/contact", name: "Contact" },
   ];
+
+  const [displayMenu, setDisplayMenu] = useState(false);
 
   return (
     <>
@@ -33,6 +35,7 @@ const Navbar = () => {
             <Button text="Book a call" isPrimary={true}></Button>
             <div className="dropdown dropdown-end">
               <div
+                onClick={() => setDisplayMenu(!displayMenu)}
                 tabIndex={0}
                 role="button"
                 className="btn btn-ghost lg:hidden"
@@ -52,14 +55,16 @@ const Navbar = () => {
                   />
                 </svg>
               </div>
-              <ul
-                tabIndex={0}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-2 w-28 p-2 shadow space-y-1"
-              >
-                {pages.map((page, idx) => (
-                  <NavPage key={idx} page={page} />
-                ))}
-              </ul>
+              {displayMenu && (
+                <ul
+                  tabIndex={0}
+                  className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-2 w-28 p-2 shadow space-y-1"
+                >
+                  {pages.map((page, idx) => (
+                    <NavPage key={idx} page={page} />
+                  ))}
+                </ul>
+              )}
             </div>
           </div>
         </div>
