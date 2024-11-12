@@ -23,9 +23,9 @@ const Hero = () => {
               <Button text="Download CV" isPrimary={false}></Button>
             </div>
           </div>
-          <div className="w-full">
+          <div className="w-full lg:w-auto">
             <iframe
-              className="mx-auto rounded-xl skeleton h-[200px] w-full shadow-lg md:h-[350px] md:w-[550px]"
+              className="mx-auto rounded-xl skeleton h-[200px] w-full shadow-lg md:h-[350px] md:w-[550px] lg:mx-0"
               src="https://www.youtube.com/embed/ijw_1AuCTes?si=4IeHBeMgyecHbDBc?rel=0"
               title="YouTube video player"
               frameborder="0"
