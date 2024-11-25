@@ -14,7 +14,7 @@ const About = () => {
   ];
 
   return (
-    <div className="mt-0 bg-base-200 py-12 z-10 relative lg:mt-40">
+    <div className="mt-0 bg-base-200 py-32 z-10 relative lg:mt-40">
       <div className="max-w-screen-xl mx-auto px-5 pt-12 bg-base-200">
         <div className="mb-12">
           <Label text="About me"></Label>
