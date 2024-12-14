@@ -1,5 +1,5 @@
-import React from "react";
 import Button from "../../Buttons/Button";
+import BannerImg from "../../../assets/images/banner.png";
 
 const Hero = () => {
   return (
@@ -14,25 +14,18 @@ const Hero = () => {
               </span>
             </h1>
             <p className="max-w-xl text-base font-normal text-base-content-secondary mt-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              voluptatum quisquam itaque vero repellendus minima iusto nulla
-              quod accusamus illum?
+              Transform your raw footage into stunning, polished videos with my
+              professional video editing services. I specialize in YouTube,
+              vlogging, and social media content, delivering cinematic visuals
+              that captivate and inspire. Let’s bring your vision to life!
             </p>
             <div className="mt-8 flex gap-4 flex-wrap">
               <Button text="Book a call" isPrimary={true}></Button>
               <Button text="Download CV" isPrimary={false}></Button>
             </div>
           </div>
-          <div className="w-full lg:w-auto">
-            <iframe
-              className="mx-auto rounded-xl skeleton h-[200px] w-full shadow-lg md:h-[350px] md:w-[550px] lg:mx-0"
-              src="https://www.youtube.com/embed/ijw_1AuCTes?si=4IeHBeMgyecHbDBc?rel=0"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+          <div className="w-[600px]">
+            <img className="w-full" src={BannerImg} alt="" />
           </div>
         </div>
       </div>

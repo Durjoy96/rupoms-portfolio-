@@ -18,7 +18,7 @@ const About = () => {
   ];
 
   return (
-    <div className="mt-0 bg-base-200 py-32 z-10 relative lg:mt-40">
+    <div className="bg-base-200 z-10 relative">
       <div className="max-w-screen-xl mx-auto px-5 pt-12 bg-base-200">
         <div className="mb-12">
           <Label text="About me"></Label>
@@ -31,15 +31,17 @@ const About = () => {
           />
           <div>
             <h4 className="font-semibold text-xl text-base-content">
-              Hey, it's Rupom 👋
+              Hey, it's Rupom Sarker👋
             </h4>
             <p className="text-base font-normal text-base-content-secondary mt-4 max-w-3xl">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum
-              aliquam quam maxime unde sapiente placeat tempora consequuntur in
-              nisi aliquid atque sequi voluptatum ut, facere iste est provident
-              voluptas repellendus. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Ea quasi sunt incidunt, eum labore nemo
-              reprehenderit commodi asperiores nesciunt doloribus!
+              A passionate Bangladeshi video editor with over{" "}
+              <b className="text-base-content">4 years of experience</b>{" "}
+              crafting cinematic stories and impactful visual content.
+              Specializing in YouTube, vlogging, and social media editing, I
+              help brands and creators elevate their content with precision and
+              creativity. I aim to inspire, educate, and connect through the art
+              of storytelling, blending technical expertise with artistic
+              vision. Let's create something remarkable together!
             </p>
           </div>
         </div>
