@@ -31,7 +31,7 @@ const About = () => {
           />
           <div>
             <h4 className="font-semibold text-xl text-base-content">
-              Hey, it's Rupom Sarker👋
+              Hi, I'm Rupom Sarker👋
             </h4>
             <p className="text-base font-normal text-base-content-secondary mt-4 max-w-3xl">
               A passionate Bangladeshi video editor with over{" "}
