@@ -21,7 +21,9 @@ const Hero = () => {
               that captivate and inspire. Let’s bring your vision to life!
             </p>
             <div className="mt-8 flex gap-4 flex-wrap">
-              <Button text="Book a call" isPrimary={true}></Button>
+              <a href="https://wa.link/z1tozl" target="_blank" rel="noreferrer">
+                <Button text="Book a call" isPrimary={true}></Button>
+              </a>
               <Button text="Download CV" isPrimary={false}></Button>
             </div>
           </div>

@@ -4,17 +4,20 @@ import Skill from "./Skill";
 import capcutPng from "../../assets/icons/capcut.png";
 import PremierePng from "../../assets/icons/premiere-pro.png";
 import DavinciPng from "../../assets/icons/davinci-resolve.png";
-import FinalCutPng from "../../assets/icons/final-cut-pro.png";
+import AdobePng from "../../assets/icons/adobe-after-effects.png";
 
 const About = () => {
   const skills = [
     { software: "Premiere Pro", icon: PremierePng },
-    { software: "CapCut", icon: capcutPng },
+    {
+      software: "Adobe After Effects",
+      icon: AdobePng,
+    },
     {
       software: "Davinci Resolve",
       icon: DavinciPng,
     },
-    { software: "Final Cut Pro", icon: FinalCutPng },
+    { software: "CapCut", icon: capcutPng },
   ];
 
   return (
