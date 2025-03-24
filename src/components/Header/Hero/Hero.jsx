@@ -27,7 +27,7 @@ const Hero = () => {
               <Button text="Download CV" isPrimary={false}></Button>
             </div>
           </div>
-          <div className="w-[600px]">
+          <div className="w-full md:w-[600px]">
             <img className="w-full" src={BannerImg} alt="" />
           </div>
         </div>

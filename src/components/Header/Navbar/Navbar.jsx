@@ -6,8 +6,8 @@ import Button from "../../Buttons/Button";
 const Navbar = () => {
   const pages = [
     { path: "/", name: "Home" },
-    { path: "/portfolio", name: "Portfolio" },
-    { path: "/contact", name: "Contact" },
+    { path: "#portfolio", name: "Portfolio" },
+    { path: "#contact", name: "Contact" },
   ];
 
   const [displayMenu, setDisplayMenu] = useState(false);

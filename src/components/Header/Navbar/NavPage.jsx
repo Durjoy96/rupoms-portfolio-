@@ -5,18 +5,27 @@ const NavPage = ({ page }) => {
   const { path, name } = page;
   return (
     <>
-      <NavLink
-        to={path}
-        className={({ isActive }) =>
-          `text-base font-medium ${
-            isActive
-              ? "text-primary font-semibold"
-              : "text-base-content-secondary hover:text-base-content"
-          }`
-        }
-      >
-        {name}
-      </NavLink>
+      {name === "Home" ? (
+        <NavLink
+          to={path}
+          className={({ isActive }) =>
+            `text-base font-medium ${
+              isActive
+                ? "text-primary font-semibold"
+                : "text-base-content-secondary hover:text-base-content"
+            }`
+          }
+        >
+          {name}
+        </NavLink>
+      ) : (
+        <a
+          href={path}
+          className="text-base font-medium text-base-content-secondary hover:text-base-content"
+        >
+          {name}
+        </a>
+      )}
     </>
   );
 };

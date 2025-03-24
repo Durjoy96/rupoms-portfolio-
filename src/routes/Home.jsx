@@ -2,6 +2,8 @@ import React from "react";
 import Hero from "../components/Header/Hero/Hero";
 import GridLines from "react-gridlines";
 import About from "../components/About/About";
+import Portfolio from "../components/Portfolio/Portfolio";
+import Contact from "../components/Contact/Contact";
 
 const Home = () => {
   return (
@@ -22,6 +24,8 @@ const Home = () => {
       </div>
       <Hero></Hero>
       <About></About>
+      <Portfolio />
+      <Contact />
     </div>
   );
 };
