@@ -10,7 +10,7 @@ const About = () => {
   const skills = [
     { software: "Premiere Pro", icon: PremierePng },
     {
-      software: "Adobe After Effects",
+      software: "After Effects",
       icon: AdobePng,
     },
     {

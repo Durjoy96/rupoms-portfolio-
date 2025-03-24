@@ -32,7 +32,9 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-end gap-1">
-            <Button text="Book a call" isPrimary={true}></Button>
+            <a href="https://wa.link/z1tozl" target="_blank" rel="noreferrer">
+              <Button text="Book a call" isPrimary={true}></Button>
+            </a>
             <div className="dropdown dropdown-end">
               <div
                 onClick={() => setDisplayMenu(!displayMenu)}
