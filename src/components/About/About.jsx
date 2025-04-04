@@ -5,6 +5,7 @@ import capcutPng from "../../assets/icons/capcut.png";
 import PremierePng from "../../assets/icons/premiere-pro.png";
 import DavinciPng from "../../assets/icons/davinci-resolve.png";
 import AdobePng from "../../assets/icons/adobe-after-effects.png";
+import RupomsHeadshot from "../../assets/images/rupom_headshot_reduced.jpg";
 
 const About = () => {
   const skills = [
@@ -27,11 +28,13 @@ const About = () => {
           <Label text="About me"></Label>
         </div>
         <div className="flex flex-col gap-8 md:flex-row">
-          <img
-            className="rounded-xl"
-            src="https://placehold.co/200x200"
-            alt=""
-          />
+          <div className="w-52 h-52 rounded-xl">
+            <img
+              className="rounded-xl w-full h-full object-cover object-center"
+              src={RupomsHeadshot}
+              alt=""
+            />
+          </div>
           <div>
             <h4 className="font-semibold text-xl text-base-content">
               Hi, I'm Rupom Sarker👋
