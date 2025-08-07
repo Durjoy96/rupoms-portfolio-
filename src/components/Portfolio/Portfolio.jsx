@@ -1,6 +1,5 @@
 import React from "react";
 import CategoryCard from "./CategoryCard";
-import Button from "../Buttons/Button";
 
 const Portfolio = () => {
   const data = [

@@ -11,16 +11,32 @@ const Contact = () => {
         facilitate communication with you.
       </p>
       <div className="flex gap-4 items-center mt-4">
-        <a href="http://" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.facebook.com/rupomsarker.creator"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <RiFacebookCircleLine className="w-9 h-9 fill-base-content-secondary hover:fill-primary" />
         </a>
-        <a href="http://" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.instagram.com/rupomsarker.creator/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaInstagram className="w-8 h-8 fill-base-content-secondary hover:fill-primary" />
         </a>
-        <a href="http://" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://api.whatsapp.com/send?phone=8801408011990&text=Hi%2C%20can%20we%20have%20a%20small%20discussion%3F/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaWhatsapp className="w-8 h-8 fill-base-content-secondary hover:fill-primary" />
         </a>
-        <a href="http://" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.youtube.com/@rupomsarker.creator"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <AiOutlineYoutube className="w-9 h-9 fill-base-content-secondary hover:fill-primary" />
         </a>
       </div>
