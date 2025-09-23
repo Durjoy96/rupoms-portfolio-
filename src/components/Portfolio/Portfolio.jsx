@@ -1,11 +1,35 @@
 import React from "react";
 import CategoryCard from "./CategoryCard";
+import TenXFasterThumb from "../../assets/thumbnails/10x-faster.jpg";
+import YouAreJustBoredThumb from "../../assets/thumbnails/you-are-just-bored.jpg";
+import FFFRFrameworkThumb from "../../assets/thumbnails/FFFR-Framework.jpg";
+import ConquerPlanningAnxietyThumb from "../../assets/thumbnails/Conquer-Planning-Anxiety.jpg";
 
 const Portfolio = () => {
   const data = [
     {
       category: "Long Form",
       videos: [
+        {
+          url: "https://www.youtube.com/embed/nME06vckjzM",
+          title: "Stop Editing Slow! Premiere Pro Shortcuts to Edit 10X Faster",
+          thumbnail: TenXFasterThumb,
+        },
+        {
+          url: "https://www.youtube.com/embed/7pyC0QfP8ds",
+          title: "You're just bored",
+          thumbnail: YouAreJustBoredThumb,
+        },
+        {
+          url: "https://www.youtube.com/embed/8XUjDNZrp-I",
+          title: "How I made 100k using my FFFR Framework",
+          thumbnail: FFFRFrameworkThumb,
+        },
+        {
+          url: "https://www.youtube.com/embed/ss_ycdC-cqc",
+          title: "Conquer Planning Anxiety",
+          thumbnail: ConquerPlanningAnxietyThumb,
+        },
         {
           url: "https://www.youtube.com/embed/7ZUMlr--eZc",
           title: "Passion or Pressure? Why I Deleted My YouTube Channel",
