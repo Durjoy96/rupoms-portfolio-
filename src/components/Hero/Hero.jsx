@@ -1,10 +1,13 @@
 import React from "react";
-import Button from "../../Buttons/Button";
-import BannerImg from "../../../assets/images/banner.png";
+import Button from "../Buttons/Button";
+import BannerImg from "@/assets/images/banner.png";
+import Image from "next/image";
+import GridLine from "../grid-lines";
 
 const Hero = () => {
   return (
     <>
+      <GridLine />
       <div className="relative max-w-screen-xl mx-auto px-5 mt-10 lg:mt-20">
         <div className="flex flex-col items-center justify-between gap-10 lg:gap-8 lg:flex-row">
           <div>
@@ -28,7 +31,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="w-full md:w-[600px]">
-            <img className="w-full" src={BannerImg} alt="" />
+            <Image className="w-full" src={BannerImg} alt="hero img" />
           </div>
         </div>
       </div>

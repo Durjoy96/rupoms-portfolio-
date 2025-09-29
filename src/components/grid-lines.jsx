@@ -1,13 +1,10 @@
+"use client";
 import React from "react";
-import Hero from "../components/Header/Hero/Hero";
 import GridLines from "react-gridlines";
-import About from "../components/About/About";
-import Portfolio from "../components/Portfolio/Portfolio";
-import Contact from "../components/Contact/Contact";
 
-const Home = () => {
+export default function GridLine() {
   return (
-    <div>
+    <>
       {/* Grid lines Background */}
       <div className="absolute -top-2 left-0 right-0 z-0 bg-fixed">
         <GridLines
@@ -22,12 +19,6 @@ const Home = () => {
           <div className="h-screen"></div>
         </GridLines>
       </div>
-      <Hero></Hero>
-      <About></About>
-      <Portfolio />
-      <Contact />
-    </div>
+    </>
   );
-};
-
-export default Home;
+}

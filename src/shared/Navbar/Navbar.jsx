@@ -1,7 +1,9 @@
+"use client";
+
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import Button from "../../components/Buttons/Button";
+import Link from "next/link";
 import NavPage from "./NavPage";
-import Button from "../../Buttons/Button";
 
 const Navbar = () => {
   const pages = [
@@ -18,7 +20,7 @@ const Navbar = () => {
         <div className="navbar rounded-full lg:bg-base-100/70 lg:backdrop-blur-lg lg:px-3 lg:py-3">
           <div className="navbar-start">
             <Link
-              to="/"
+              href="/"
               className="text-lg md:text-xl font-bold text-base-content lg:ml-4"
             >
               Rupom Sarker

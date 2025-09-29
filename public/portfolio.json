@@ -1,0 +1,81 @@
+[
+  {
+    "category": "Long Form",
+    "videos": [
+      {
+        "url": "https://www.youtube.com/embed/nME06vckjzM",
+        "title": "Stop Editing Slow! Premiere Pro Shortcuts to Edit 10X Faster"
+      },
+      {
+        "url": "https://www.youtube.com/embed/7pyC0QfP8ds",
+        "title": "You're just bored"
+      },
+      {
+        "url": "https://www.youtube.com/embed/8XUjDNZrp-I",
+        "title": "How I made 100k using my FFFR Framework"
+      },
+      {
+        "url": "https://www.youtube.com/embed/ss_ycdC-cqc",
+        "title": "Conquer Planning Anxiety"
+      },
+      {
+        "url": "https://www.youtube.com/embed/7ZUMlr--eZc",
+        "title": "Passion or Pressure? Why I Deleted My YouTube Channel"
+      },
+      {
+        "url": "https://www.youtube.com/embed/CbUrGyvjVh0",
+        "title": "Follow These 6 Simple Steps To Start Video Editing With Confidence"
+      },
+      {
+        "url": "https://www.youtube.com/embed/EiCH_HSIWtA",
+        "title": "LF_003_Fyzee"
+      },
+      {
+        "url": "https://www.youtube.com/embed/i7p3OH6Dk4M",
+        "title": "LF_004_Street Cars"
+      }
+    ]
+  },
+  {
+    "category": "Short Form",
+    "videos": [
+      {
+        "url": "https://www.youtube.com/embed/qo0Jz66lFXo",
+        "title": "New port Targeted intro"
+      },
+      {
+        "url": "https://www.youtube.com/embed/KyugIdUEOg4",
+        "title": "Labor Woman"
+      },
+      {
+        "url": "https://img.youtube.com/vi/vXNsP6jWlTA/maxresdefault.jpg",
+        "title": "Healing from the apology"
+      },
+      {
+        "url": "https://www.youtube.com/embed/3n9eTeXdclE",
+        "title": "I Learned Premiere Pro Easily… Except for This Skill!"
+      },
+      {
+        "url": "https://www.youtube.com/embed/BiMlIsCCDG4",
+        "title": "SF_002_Tanjir"
+      },
+      {
+        "url": "https://www.youtube.com/embed/no9rnH2Xztw",
+        "title": "SF_003_Accidental Entrepreneur"
+      },
+      {
+        "url": "https://www.youtube.com/embed/v0ilWCGv0J4",
+        "title": "SF_004_Promises Are Easy"
+      }
+    ]
+  },
+  {
+    "category": "Cinematic",
+    "videos": [
+      {
+        "url": "https://www.youtube.com/embed/sQw24qoFXAk",
+        "title": "CIN_001_Dropout"
+      }
+    ]
+  }
+]

@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useRef } from "react";
 
 const VideoModal = ({ video, idx }) => {
@@ -39,11 +41,10 @@ const VideoModal = ({ video, idx }) => {
             ref={iframeRef}
             src={getVideoUrl()}
             title={video.title}
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-            className="rounded-lg w-full h-[192px] md:h-[477px] max-h-[477px] mt-4"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            className="rounded-lg w-full h-[192px] md:h-[477px] max-h-[477px] mt-4 z-10"
           ></iframe>
           <h3 className="font-bold text-lg text-base-content mt-2">
             {video.title}

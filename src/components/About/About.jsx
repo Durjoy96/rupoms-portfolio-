@@ -1,11 +1,12 @@
 import React from "react";
 import Label from "../Labels/Label";
 import Skill from "./Skill";
-import capcutPng from "../../assets/icons/capcut.png";
-import PremierePng from "../../assets/icons/premiere-pro.png";
-import DavinciPng from "../../assets/icons/davinci-resolve.png";
-import AdobePng from "../../assets/icons/adobe-after-effects.png";
-import RupomsHeadshot from "../../assets/images/rupom_headshot_reduced.jpg";
+import capcutPng from "@/assets/icons/capcut.png";
+import PremierePng from "@/assets/icons/premiere-pro.png";
+import DavinciPng from "@/assets/icons/davinci-resolve.png";
+import AdobePng from "@/assets/icons/adobe-after-effects.png";
+import RupomsHeadshot from "@/assets/images/rupom_headshot_reduced.jpg";
+import Image from "next/image";
 
 const About = () => {
   const skills = [
@@ -29,10 +30,10 @@ const About = () => {
         </div>
         <div className="flex flex-col gap-8 md:flex-row">
           <div className="w-52 h-52 rounded-xl">
-            <img
+            <Image
               className="rounded-xl w-full h-full object-cover object-center"
               src={RupomsHeadshot}
-              alt=""
+              alt="Rupom Sarker"
             />
           </div>
           <div>
