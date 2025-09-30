@@ -7,7 +7,7 @@ import Image from "next/image";
 const ThumbnailCard = ({ title, videoUrl }) => {
   return (
     <div
-      className="relative cursor-pointer group"
+      className="relative cursor-pointer group transition-all duration-300 delay-150 hover:scale-[1.03] hover:shadow-lg hover:-rotate-1"
       onClick={() =>
         document.getElementById(`video_modal_${title}`).showModal()
       }
