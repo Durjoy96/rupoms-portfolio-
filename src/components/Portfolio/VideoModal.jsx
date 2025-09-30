@@ -2,7 +2,7 @@
 
 import React, { useRef } from "react";
 
-const VideoModal = ({ video, idx }) => {
+const VideoModal = ({ title, videoUrl, idx }) => {
   const iframeRef = useRef(null);
 
   const handleClose = () => {
@@ -17,12 +17,12 @@ const VideoModal = ({ video, idx }) => {
 
   // Modify YouTube URL to enable the JavaScript API
   const getVideoUrl = () => {
-    if (video.url.includes("youtube.com")) {
+    if (videoUrl.includes("youtube.com")) {
       // Add enablejsapi=1 to the URL
-      const separator = video.url.includes("?") ? "&" : "?";
-      return `${video.url}${separator}enablejsapi=1`;
+      const separator = videoUrl.includes("?") ? "&" : "?";
+      return `${videoUrl}${separator}enablejsapi=1`;
     }
-    return video.url;
+    return videoUrl;
   };
 
   return (
@@ -40,15 +40,13 @@ const VideoModal = ({ video, idx }) => {
           <iframe
             ref={iframeRef}
             src={getVideoUrl()}
-            title={video.title}
+            title={title}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
             className="rounded-lg w-full h-[192px] md:h-[477px] max-h-[477px] mt-4 z-10"
           ></iframe>
-          <h3 className="font-bold text-lg text-base-content mt-2">
-            {video.title}
-          </h3>
+          <h3 className="font-bold text-lg text-base-content mt-2">{title}</h3>
         </div>
       </dialog>
     </>

@@ -1,41 +1,48 @@
 "use client";
 
-import VideoModal from "./VideoModal";
-import Label from "../Labels/Label";
-import { PlayCircle } from "lucide-react";
-import Image from "next/image";
+import React, { useEffect, useState } from "react";
+import ThumbnailCard from "./ThumbnailCard";
 
-const CategoryCard = ({ data }) => {
+export default function CategoryCard({ data }) {
+  const [categoryName, setCategoryName] = useState("Long Form");
+  const [projects, setProjects] = useState(null);
+  useEffect(() => {
+    setProjects(() =>
+      data.filter((project) => project.category === categoryName)
+    );
+  }, [categoryName]);
   return (
-    <div className="mt-12">
-      <Label text={data.category}></Label>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-        {data.videos.map((video, idx) => (
-          <div
-            key={idx}
-            className="relative cursor-pointer group"
-            onClick={() =>
-              document.getElementById(`video_modal_${video.title}`).showModal()
-            }
-          >
-            <Image
-              src={`https://img.youtube.com/vi/${
-                video?.url.split("/")[4]
-              }/maxresdefault.jpg`}
-              alt={video.title}
-              width={200}
-              height={100}
-              className="w-full rounded-lg"
-              loading="lazy"
-            />
-            <div className="absolute bg-black/40 hover:bg-black/60  right-0 left-0 top-0 bottom-0 rounded-lg transition-all delay-200"></div>
-            <PlayCircle className="w-10 h-10 stroke-[1.6px] stroke-base-100/80 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 group-hover:stroke-primary transition-all delay-200" />
-            <VideoModal video={video} idx={video.title} />
-          </div>
-        ))}
+    <div>
+      <div className="flex justify-start mt-8">
+        <div className="flex items-center rounded-full px-1 py-0.5 bg-base-200 w-fit border-base-300">
+          {data.map((projects, idx) => (
+            <button
+              key={idx}
+              className={`rounded-full py-2 px-4 cursor-pointer ${
+                categoryName === projects.category
+                  ? "bg-gradient-to-r text-primary-content from-primary to-blue-500/50 hover:bg-primary hover:border-primary shadow-primary shadow-sm"
+                  : "text-gray-500 hover:text-base-content border-transparent bg-transparent"
+              }`}
+              onClick={() => setCategoryName(() => projects.category)}
+            >
+              {projects.category}
+            </button>
+          ))}
+        </div>
       </div>
+      {projects && (
+        <div className="mt-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+            {projects[0].videos.map((project, idx) => (
+              <ThumbnailCard
+                key={idx}
+                videoUrl={project.url}
+                title={project.title}
+              />
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
-};
-
-export default CategoryCard;
+}

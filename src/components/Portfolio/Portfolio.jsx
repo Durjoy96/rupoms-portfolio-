@@ -12,15 +12,13 @@ const Portfolio = async () => {
       <div className="max-w-screen-xl mx-auto px-4">
         <div>
           <h2 className="text-4xl font-bold text-base-content">Portfolio</h2>
-          <p className="pt-2 pb-4 text-base-content-secondary max-w-lg">
+          <p className="pt-2 text-base-content-secondary max-w-lg">
             Here are some of the projects I have worked on. I am always looking
             for new challenges and opportunities to learn.
           </p>
         </div>
         <div>
-          {data.map((item, idx) => (
-            <CategoryCard key={idx} data={item} />
-          ))}
+          <CategoryCard data={data} />
         </div>
       </div>
     </section>

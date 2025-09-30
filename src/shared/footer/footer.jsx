@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="bg-base-200">
+    <div className="bg-base-200" id="contact">
       {" "}
       <footer
         data-theme="light"
