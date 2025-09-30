@@ -11,13 +11,21 @@ const Hero = () => {
       <div className="relative max-w-screen-xl mx-auto px-5 mt-10 lg:mt-20">
         <div className="flex flex-col items-center justify-between gap-10 lg:gap-8 lg:flex-row">
           <div>
-            <h1 className="text-4xl tracking-tight text-base-content font-bold max-w-xl md:text-5xl lg:text-6xl">
+            <h1
+              data-scroll
+              data-scroll-speed="0.1"
+              className="text-4xl tracking-tight text-base-content font-bold max-w-xl md:text-5xl lg:text-6xl"
+            >
               Just Record, and{" "}
               <span className="underline decoration-dashed underline-offset-4 decoration-primary">
                 Leave the Rest to Me
               </span>
             </h1>
-            <p className="max-w-xl text-base font-normal text-base-content-secondary mt-4">
+            <p
+              data-scroll
+              data-scroll-speed="0.05"
+              className="max-w-xl text-base font-normal text-base-content-secondary mt-4"
+            >
               Transform your raw footage into stunning, polished videos with my
               professional video editing services. I specialize in YouTube,
               vlogging, and social media content, delivering cinematic visuals
@@ -30,7 +38,7 @@ const Hero = () => {
               <Button text="Download CV" isPrimary={false}></Button>
             </div>
           </div>
-          <div className="w-full md:w-[600px]">
+          <div className="w-full md:w-[600px]" data-scroll>
             <Image className="w-full" src={BannerImg} alt="hero img" />
           </div>
         </div>

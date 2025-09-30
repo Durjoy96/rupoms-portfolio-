@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Button from "../../components/Buttons/Button";
 import Link from "next/link";
 import NavPage from "./NavPage";
+import useScrollDirection from "@/utils/hooks/useScrollDirection";
 
 const Navbar = () => {
   const pages = [
@@ -14,9 +15,15 @@ const Navbar = () => {
 
   const [displayMenu, setDisplayMenu] = useState(false);
 
+  const scrollDirection = useScrollDirection();
+
   return (
     <>
-      <nav className="max-w-screen-xl mx-auto px-5 py-3 relative z-10">
+      <nav
+        className={`max-w-screen-xl mx-auto px-5 py-3 relative z-10 ${
+          scrollDirection === "down" && "hidden"
+        } ${scrollDirection === "up" && "block"}`}
+      >
         <div className="navbar rounded-full lg:bg-base-100/70 lg:backdrop-blur-lg lg:px-3 lg:py-3">
           <div className="navbar-start">
             <Link
