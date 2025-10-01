@@ -21,8 +21,12 @@ const Navbar = () => {
     <>
       <nav
         className={`max-w-screen-xl mx-auto px-5 py-3 relative z-10 ${
-          scrollDirection === "down" && "hidden"
-        } ${scrollDirection === "up" && "block"}`}
+          scrollDirection === "down" &&
+          "transition-all duration-1000 ease-in-out translate-y-[-100%]"
+        } ${
+          scrollDirection === "up" &&
+          "transition-all duration-1000 ease-in-out translate-y-0"
+        }`}
       >
         <div className="navbar rounded-full lg:bg-base-100/70 lg:backdrop-blur-lg lg:px-3 lg:py-3">
           <div className="navbar-start">
