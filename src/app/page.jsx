@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <SmoothScroll>
-        <section>
+        <section data-theme="light">
           <Hero />
         </section>
         <section>

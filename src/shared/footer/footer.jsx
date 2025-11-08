@@ -8,7 +8,7 @@ export default function Footer() {
       {" "}
       <footer
         data-theme="light"
-        className="max-w-screen-xl mx-auto px-5 footer sm:footer-horizontal bg-transparent text-base-content items-center p-6"
+        className="max-w-screen-xl mx-auto px-5 footer sm:footer-horizontal bg-transparent text-base-content items-center py-6"
       >
         <aside className="grid-flow-col items-center">
           <Link

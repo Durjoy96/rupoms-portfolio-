@@ -20,6 +20,7 @@ const Navbar = () => {
   return (
     <>
       <nav
+        data-theme="light"
         className={`max-w-screen-xl mx-auto px-5 py-3 relative z-10 ${
           scrollDirection === "down" &&
           "transition-all duration-1000 ease-in-out translate-y-[-100%]"

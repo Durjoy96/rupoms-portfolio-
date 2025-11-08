@@ -8,7 +8,11 @@ const Portfolio = async () => {
   );
   const data = await result.json();
   return (
-    <section className="bg-base-100 py-12 md:py-20 lg:py-32" id="portfolio">
+    <section
+      data-theme="light"
+      className="bg-base-100 py-12 md:py-20 lg:py-32"
+      id="portfolio"
+    >
       <div className="max-w-screen-xl mx-auto px-4">
         <div>
           <h2 className="text-4xl font-bold text-base-content">Portfolio</h2>

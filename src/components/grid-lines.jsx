@@ -6,7 +6,10 @@ export default function GridLine() {
   return (
     <>
       {/* Grid lines Background */}
-      <div className="absolute -top-2 left-0 right-0 z-0 bg-fixed">
+      <div
+        data-theme="light"
+        className="absolute -top-2 left-0 right-0 z-0 bg-fixed"
+      >
         <GridLines
           className="grid-area"
           cellWidth={180}

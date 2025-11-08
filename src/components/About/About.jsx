@@ -23,7 +23,10 @@ const About = () => {
   ];
 
   return (
-    <div className="bg-base-200 z-10 relative pb-12 md:pb-20 lg:pb-32">
+    <div
+      data-theme="light"
+      className="bg-base-200 z-10 relative pb-12 md:pb-20 lg:pb-32"
+    >
       <div className="max-w-screen-xl mx-auto px-5 pt-12 bg-base-200">
         <div className="mb-12">
           <Label text="About me"></Label>

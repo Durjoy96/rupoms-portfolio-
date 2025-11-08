@@ -1,18 +1,18 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: cupcake --default;
+  themes: light --default;
 }
 
 @plugin "daisyui/theme" {
-  name: "cupcake";
+  name: "light";
   default: true;
   --color-base-100: "#ffffff";
   --color-base-200: "#f8f9fd";
   --color-base-300: "#dfe5eb";
-  --color-base-content: "#30313d";
-  --color-base-content-secondary: "#5c5b61";
   --color-primary: "rgb(59 130 246)";
   --color-primary-content: "#ffffff";
+  --color-base-content: "#30313d";
+  --color-base-content-secondary: "#5c5b61";
 }
 
 :root {
