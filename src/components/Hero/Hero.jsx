@@ -8,10 +8,7 @@ const Hero = () => {
   return (
     <>
       <GridLine />
-      <div
-        data-theme="light"
-        className="hero relative max-w-screen-xl mx-auto px-5 mt-10 lg:mt-20"
-      >
+      <div className="hero relative max-w-screen-xl mx-auto px-5 mt-10 lg:mt-20">
         <div className="flex flex-col items-center justify-between gap-10 lg:gap-8 lg:flex-row">
           <div>
             <h1
