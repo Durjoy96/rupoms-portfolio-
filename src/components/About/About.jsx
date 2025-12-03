@@ -32,7 +32,7 @@ const About = () => {
           <Label text="About me"></Label>
         </div>
         <div className="flex flex-col gap-8 md:flex-row">
-          <div className="w-52 h-52 rounded-xl p-2">
+          <div className="w-40 h-40 rounded-xl">
             <Image
               className="rounded-xl w-full h-full object-cover object-center"
               src={RupomsHeadshot}
