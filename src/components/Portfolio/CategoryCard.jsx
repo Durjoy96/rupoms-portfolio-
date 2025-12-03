@@ -1,19 +1,31 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import ThumbnailCard from "./ThumbnailCard";
+import { useRouter, useSearchParams } from "next/navigation";
 
 export default function CategoryCard({ data }) {
-  const [categoryName, setCategoryName] = useState("Long Form");
+  const router = useRouter();
+  const searchParams = useSearchParams();
   const [projects, setProjects] = useState(null);
+  const category = searchParams.get("category") || null;
+  const [categoryName, setCategoryName] = useState(category || "Long Form");
   useEffect(() => {
     setProjects(() =>
       data.filter((project) => project.category === categoryName)
     );
   }, [categoryName]);
+
+  const portfolioRef = useRef(null);
+
+  useEffect(() => {
+    if (category && portfolioRef.current)
+      portfolioRef.current.scrollIntoView({ behavior: "smooth" });
+  }, []);
+
   return (
     <div>
-      <div className="flex justify-start mt-8">
+      <div ref={portfolioRef} className="flex justify-start mt-8">
         <div className="flex items-center rounded-full px-1 py-0.5 bg-base-200 w-fit border-base-300">
           {data.map((projects, idx) => (
             <button
@@ -23,7 +35,15 @@ export default function CategoryCard({ data }) {
                   ? "bg-gradient-to-r text-primary-content from-primary to-blue-500/50 hover:bg-primary hover:border-primary shadow-primary shadow-sm"
                   : "text-gray-500 hover:text-base-content border-transparent bg-transparent"
               }`}
-              onClick={() => setCategoryName(() => projects.category)}
+              onClick={() => {
+                setCategoryName(() => projects.category);
+                const params = new URLSearchParams(searchParams.toString());
+                params.set("category", projects.category);
+
+                router.replace(`?${params.toString()}`, {
+                  scroll: false,
+                });
+              }}
             >
               {projects.category}
             </button>
