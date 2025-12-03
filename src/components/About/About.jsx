@@ -5,7 +5,7 @@ import capcutPng from "@/assets/icons/capcut.png";
 import PremierePng from "@/assets/icons/premiere-pro.png";
 import DavinciPng from "@/assets/icons/davinci-resolve.png";
 import AdobePng from "@/assets/icons/adobe-after-effects.png";
-import RupomsHeadshot from "@/assets/images/rupom_headshot_reduced.jpg";
+import RupomsHeadshot from "@/assets/images/profile.png";
 import Image from "next/image";
 
 const About = () => {
@@ -32,7 +32,7 @@ const About = () => {
           <Label text="About me"></Label>
         </div>
         <div className="flex flex-col gap-8 md:flex-row">
-          <div className="w-52 h-52 rounded-xl">
+          <div className="w-52 h-52 rounded-xl p-2">
             <Image
               className="rounded-xl w-full h-full object-cover object-center"
               src={RupomsHeadshot}
@@ -44,7 +44,7 @@ const About = () => {
               Hi, I'm Rupom Sarker👋
             </h4>
             <p className="text-base font-normal text-base-content-secondary mt-4 max-w-3xl">
-              A passionate Bangladeshi video editor with over{" "}
+              A passionate video editor with over{" "}
               <b className="text-base-content">4 years of experience</b>{" "}
               crafting cinematic stories and impactful visual content.
               Specializing in YouTube, vlogging, and social media editing, I

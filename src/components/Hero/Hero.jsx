@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../Buttons/Button";
-import BannerImg from "@/assets/images/banner.png";
+import BannerImg from "@/assets/images/background.png";
 import Image from "next/image";
 import GridLine from "../grid-lines";
 
@@ -38,7 +38,7 @@ const Hero = () => {
               <Button text="Download CV" isPrimary={false}></Button>
             </div>
           </div>
-          <div className="w-full md:w-[600px]" data-scroll>
+          <div className="w-full md:w-[450px]" data-scroll>
             <Image className="w-full" src={BannerImg} alt="hero img" />
           </div>
         </div>
