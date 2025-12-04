@@ -7,6 +7,7 @@ import DavinciPng from "@/assets/icons/davinci-resolve.png";
 import AdobePng from "@/assets/icons/adobe-after-effects.png";
 import RupomsHeadshot from "@/assets/images/profile.png";
 import Image from "next/image";
+import MainVideo from "./main-video";
 
 const About = () => {
   const skills = [
@@ -31,39 +32,45 @@ const About = () => {
         <div className="mb-12">
           <Label text="About me"></Label>
         </div>
-        <div className="flex flex-col gap-8 md:flex-row">
-          <div className="w-40 h-40 rounded-xl">
-            <Image
-              className="rounded-xl w-full h-full object-cover object-center"
-              src={RupomsHeadshot}
-              alt="Rupom Sarker"
-            />
-          </div>
+        <div className="max-w-3xl mx-auto">
           <div>
-            <h4 className="font-semibold text-xl text-base-content">
-              Hi, I'm Rupom Sarker👋
-            </h4>
-            <p className="text-base font-normal text-base-content-secondary mt-4 max-w-3xl">
-              A passionate video editor with over{" "}
-              <b className="text-base-content">4 years of experience</b>{" "}
-              crafting cinematic stories and impactful visual content.
-              Specializing in YouTube, vlogging, and social media editing, I
-              help brands and creators elevate their content with precision and
-              creativity. I aim to inspire, educate, and connect through the art
-              of storytelling, blending technical expertise with artistic
-              vision. Let's create something remarkable together!
-            </p>
+            {/* image */}
+            <div className="w-32 h-32 lg:w-38 lg:h-38 rounded-full float-left mr-4 mb-4 lg:mb-0">
+              <Image
+                className="rounded-xl w-full h-full object-contain object-center"
+                src={RupomsHeadshot}
+                alt="Rupom Sarker"
+              />
+            </div>
+            <div>
+              <h4 className="font-semibold text-lg lg:text-xl text-base-content">
+                Hi, I'm Rupom Sarker👋
+              </h4>
+              <p className="text-sm lg:text-base font-normal text-base-content-secondary mt-4 max-w-3xl">
+                A passionate video editor with over{" "}
+                <b className="text-base-content">4 years of experience</b>{" "}
+                crafting cinematic stories and impactful visual content.
+                Specializing in YouTube, vlogging, and social media editing, I
+                help brands and creators elevate their content with precision
+                and creativity. I aim to inspire, educate, and connect through
+                the art of storytelling, blending technical expertise with
+                artistic vision. Let's create something remarkable together!
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="mt-8 md:mt-12">
-          <h3 className="text-xl font-bold text-base-content md:text-2xl">
-            My Skills
-          </h3>
-          <div className="flex flex-col gap-5 mt-6 md:flex-row md:gap-6 md:mt-8">
-            {skills.map((item, idx) => (
-              <Skill key={idx} skill={item}></Skill>
-            ))}
+          {/* skills */}
+          <div className="mt-8">
+            <h3 className="text-lg lg:text-xl font-bold text-base-content ">
+              My Skills
+            </h3>
+            <div className="flex flex-col gap-5 mt-4 md:flex-row md:gap-6">
+              {skills.map((item, idx) => (
+                <Skill key={idx} skill={item}></Skill>
+              ))}
+            </div>
           </div>
+          {/* main video */}
+          <MainVideo />
         </div>
       </div>
     </div>
