@@ -7,7 +7,6 @@ import DavinciPng from "@/assets/icons/davinci-resolve.png";
 import AdobePng from "@/assets/icons/adobe-after-effects.png";
 import RupomsHeadshot from "@/assets/images/profile.png";
 import Image from "next/image";
-import MainVideo from "./main-video";
 
 const About = () => {
   const skills = [
@@ -32,10 +31,10 @@ const About = () => {
         <div className="mb-12">
           <Label text="About me"></Label>
         </div>
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div>
             {/* image */}
-            <div className="w-32 h-32 lg:w-38 lg:h-38 rounded-full float-left mr-4 mb-4 lg:mb-0">
+            <div className="w-32 h-32 lg:w-38 lg:h-38 rounded-full float-left mr-5 mb-4 lg:mb-0">
               <Image
                 className="rounded-xl w-full h-full object-contain object-center"
                 src={RupomsHeadshot}
@@ -46,7 +45,7 @@ const About = () => {
               <h4 className="font-semibold text-lg lg:text-xl text-base-content">
                 Hi, I'm Rupom Sarker👋
               </h4>
-              <p className="text-sm lg:text-base font-normal text-base-content-secondary mt-4 max-w-3xl">
+              <p className="text-sm lg:text-base font-normal text-base-content-secondary mt-4 max-w-3xl text-justify">
                 A passionate video editor with over{" "}
                 <b className="text-base-content">4 years of experience</b>{" "}
                 crafting cinematic stories and impactful visual content.
@@ -69,8 +68,6 @@ const About = () => {
               ))}
             </div>
           </div>
-          {/* main video */}
-          <MainVideo />
         </div>
       </div>
     </div>

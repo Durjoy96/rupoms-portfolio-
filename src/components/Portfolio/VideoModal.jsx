@@ -2,7 +2,7 @@
 
 import React, { useRef } from "react";
 
-const VideoModal = ({ title, videoUrl, idx }) => {
+const VideoModal = ({ title, videoUrl, showModal, idx }) => {
   const iframeRef = useRef(null);
 
   const handleClose = () => {
@@ -20,7 +20,9 @@ const VideoModal = ({ title, videoUrl, idx }) => {
     if (videoUrl.includes("youtube.com")) {
       // Add enablejsapi=1 to the URL
       const separator = videoUrl.includes("?") ? "&" : "?";
-      return `${videoUrl}${separator}enablejsapi=1`;
+      return `${videoUrl}${separator}enablejsapi=1&${
+        showModal && "autoplay=1"
+      }`;
     }
     return videoUrl;
   };
@@ -44,7 +46,9 @@ const VideoModal = ({ title, videoUrl, idx }) => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
-            className="rounded-lg w-full h-[192px] md:h-[477px] max-h-[477px] mt-4 z-10"
+            className={`rounded-lg w-full h-[192px] md:h-[477px] max-h-[477px] mt-4 z-10 ${
+              !showModal && "hidden"
+            }`}
           ></iframe>
           <h3 className="font-bold text-lg text-base-content mt-2">{title}</h3>
         </div>
