@@ -2,13 +2,11 @@ import React from "react";
 import Button from "../Buttons/Button";
 import BannerImg from "@/assets/images/background.png";
 import Image from "next/image";
-import GridLine from "../grid-lines";
 
 const Hero = () => {
   return (
     <>
-      <GridLine />
-      <div className=" relative max-w-7xl mx-auto px-5 mt-10 lg:mt-20">
+      <div className="relative max-w-7xl mx-auto px-5 pt-10 lg:pt-20">
         <div className="flex flex-col items-center justify-between gap-10 lg:gap-8 lg:flex-row">
           <div>
             <h1

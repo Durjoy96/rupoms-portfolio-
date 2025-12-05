@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <SmoothScroll>
-        <section>
+        <section data-theme="light">
           <MainVideo />
         </section>
         <section data-theme="light">

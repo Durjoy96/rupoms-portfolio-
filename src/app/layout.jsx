@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-base-100`}
       >
-        <header className="z-50 lg:sticky lg:top-0">
+        <header className="z-50 lg:sticky lg:top-0 px-5 lg:px-0">
           <Navbar />
         </header>
         {children}
