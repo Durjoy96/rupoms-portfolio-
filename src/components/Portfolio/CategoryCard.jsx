@@ -25,12 +25,12 @@ export default function CategoryCard({ data }) {
 
   return (
     <div>
-      <div ref={portfolioRef} className="flex justify-start mt-8">
+      <div ref={portfolioRef} className="flex justify-start mt-6 lg:mt-8">
         <div className="flex items-center rounded-full px-1 py-0.5 bg-base-200 w-fit border-base-300">
           {data.map((projects, idx) => (
             <button
               key={idx}
-              className={`rounded-full py-2 px-4 cursor-pointer ${
+              className={`rounded-full py-2 px-3 lg:py-2 lg:px-4 text-sm lg:text-base cursor-pointer ${
                 categoryName === projects.category
                   ? "bg-gradient-to-r text-primary-content from-primary to-blue-500/50 hover:bg-primary hover:border-primary shadow-primary shadow-sm"
                   : "text-gray-500 hover:text-base-content border-transparent bg-transparent"

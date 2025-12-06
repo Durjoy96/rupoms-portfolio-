@@ -107,7 +107,7 @@ const Navbar = () => {
             </div>
             <Link
               href="/"
-              className="text-lg md:text-xl font-bold text-base-content lg:ml-4"
+              className="text-lg md:text-xl font-bold text-base-content lg:ml-4 whitespace-nowrap"
             >
               Rupom Sarker
             </Link>

@@ -15,8 +15,10 @@ const Portfolio = async () => {
     >
       <div className="max-w-screen-xl mx-auto px-4">
         <div>
-          <h2 className="text-4xl font-bold text-base-content">Portfolio</h2>
-          <p className="pt-2 text-base-content-secondary max-w-lg">
+          <h2 className="text-2xl lg:text-4xl font-bold text-base-content">
+            Portfolio
+          </h2>
+          <p className="text-sm lg:text-base lg:pt-2 text-base-content-secondary max-w-lg">
             Here are some of the projects I have worked on. I am always looking
             for new challenges and opportunities to learn.
           </p>
