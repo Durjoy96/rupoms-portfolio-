@@ -62,7 +62,11 @@ const Navbar = () => {
                   <a>Hire Me</a>
                   <ul className="p-2">
                     <li>
-                      <a href="/" className="flex justify-between">
+                      <a
+                        href="https://www.fiverr.com/mdrupomsarkerr"
+                        className="flex justify-between"
+                        target="_blank"
+                      >
                         <span>
                           <svg
                             width="75"
@@ -85,7 +89,10 @@ const Navbar = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="/">
+                      <a
+                        href="https://www.upwork.com/freelancers/~014217012d66298673?referrer_url_path=%2Fnx%2Fsearch%2Ftalent%2Fdetails%2F~014217012d66298673%2Fprofile"
+                        target="_blank"
+                      >
                         <img
                           src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDIgMjgiIGFyaWEtaGlkZGVuPSJ0cnVlIiByb2xlPSJpbWciPjxwYXRoIGQ9Ik0yOC4xOCAxOS4wNkE2LjU0IDYuNTQgMCAwMTIzIDE2Yy42Ny01LjM0IDIuNjItNyA1LjItN3M0LjU0IDIgNC41NCA1LTIgNS00LjU0IDVtMC0xMy4zNGE3Ljc3IDcuNzcgMCAwMC03LjkgNi4wOCAyNiAyNiAwIDAxLTEuOTMtNS42MkgxMnY3LjljMCAyLjg3LTEuMyA1LTMuODUgNXMtNC0yLjEyLTQtNXYtNy45SC40OXY3LjlBOC42MSA4LjYxIDAgMDAyLjYgMjBhNy4yNyA3LjI3IDAgMDA1LjU0IDIuMzVjNC40MSAwIDcuNS0zLjM5IDcuNS04LjI0VjguNzdhMjUuODcgMjUuODcgMCAwMDMuNjYgOC4wNUwxNy4zNCAyOGgzLjcybDEuMjktNy45MmExMSAxMSAwIDAwMS4zNiAxIDguMzIgOC4zMiAwIDAwNC4xNCAxLjI4aC4zNEE4LjEgOC4xIDAgMDAzNi4zNyAxNGE4LjEyIDguMTIgMCAwMC04LjE5LTguMzFNODAuOCA3Ljg2VjYuMThoLTMuNnYxNS42M2gzLjY1di02LjEyYzAtMy43Ny4zNC02LjQ4IDUuNC02LjEzVjZjLTIuMzYtLjE4LTQuMi4zMS01LjQ1IDEuODciIGZpbGw9InZhcigtLWNvbG9yLWxvZ28sIGJsYWNrKSIvPjxwb2x5Z29uIHBvaW50cz0iNTUuNTEgNi4xNyA1Mi44NyAxNy4xMSA1MC4wNSA2LjE3IDQ1LjQxIDYuMTcgNDIuNTkgMTcuMTEgMzkuOTUgNi4xNyAzNi4yNiA2LjE3IDQwLjMxIDIxLjgyIDQ0LjY5IDIxLjgyIDQ3LjczIDEwLjcxIDUwLjc0IDIxLjgyIDU1LjEyIDIxLjgyIDU5LjQgNi4xNyA1NS41MSA2LjE3IiBmaWxsPSJ2YXIoLS1jb2xvci1sb2dvLCBibGFjaykiLz48cGF0aCBkPSJNNjcuNDIgMTkuMDdjLTIuNTkgMC00LjUzLTIuMDUtNC41My01czItNSA0LjUzLTVTNzIgMTEgNzIgMTRzLTIgNS00LjU0IDVtMC0xMy4zNUE4LjEgOC4xIDAgMDA1OS4yNSAxNGE4LjE4IDguMTggMCAxMDE2LjM1IDAgOC4xMSA4LjExIDAgMDAtOC4xOC04LjMxbTI0LjA1IDguNDRoLjg0bDUuMDkgNy42OWg0LjExbC01Ljg1LTguNTNhNy42NiA3LjY2IDAgMDA0Ljc0LTcuMTFoLTMuNjNjMCAzLjM3LTIuNjYgNC42NS01LjMgNC42NVYwaC0zLjY1djIxLjgyaDMuNjR6IiBmaWxsPSJ2YXIoLS1jb2xvci1sb2dvLCBibGFjaykiLz48L3N2Zz4="
                           alt="Upwork logo"
@@ -95,9 +102,6 @@ const Navbar = () => {
                       </a>
                     </li>
                   </ul>
-                </li>
-                <li>
-                  <a>Item 3</a>
                 </li>
               </ul>
             </div>
@@ -130,7 +134,11 @@ const Navbar = () => {
                   </summary>
                   <ul className="p-2 bg-base-100 w-52 z-1">
                     <li>
-                      <a href="/" className="flex justify-between">
+                      <a
+                        href="https://www.fiverr.com/mdrupomsarkerr"
+                        className="flex justify-between"
+                        target="_blank"
+                      >
                         <span>
                           <svg
                             width="75"
@@ -153,7 +161,10 @@ const Navbar = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="/">
+                      <a
+                        href="https://www.upwork.com/freelancers/~014217012d66298673?referrer_url_path=%2Fnx%2Fsearch%2Ftalent%2Fdetails%2F~014217012d66298673%2Fprofile"
+                        target="_blank"
+                      >
                         <img
                           src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDIgMjgiIGFyaWEtaGlkZGVuPSJ0cnVlIiByb2xlPSJpbWciPjxwYXRoIGQ9Ik0yOC4xOCAxOS4wNkE2LjU0IDYuNTQgMCAwMTIzIDE2Yy42Ny01LjM0IDIuNjItNyA1LjItN3M0LjU0IDIgNC41NCA1LTIgNS00LjU0IDVtMC0xMy4zNGE3Ljc3IDcuNzcgMCAwMC03LjkgNi4wOCAyNiAyNiAwIDAxLTEuOTMtNS42MkgxMnY3LjljMCAyLjg3LTEuMyA1LTMuODUgNXMtNC0yLjEyLTQtNXYtNy45SC40OXY3LjlBOC42MSA4LjYxIDAgMDAyLjYgMjBhNy4yNyA3LjI3IDAgMDA1LjU0IDIuMzVjNC40MSAwIDcuNS0zLjM5IDcuNS04LjI0VjguNzdhMjUuODcgMjUuODcgMCAwMDMuNjYgOC4wNUwxNy4zNCAyOGgzLjcybDEuMjktNy45MmExMSAxMSAwIDAwMS4zNiAxIDguMzIgOC4zMiAwIDAwNC4xNCAxLjI4aC4zNEE4LjEgOC4xIDAgMDAzNi4zNyAxNGE4LjEyIDguMTIgMCAwMC04LjE5LTguMzFNODAuOCA3Ljg2VjYuMThoLTMuNnYxNS42M2gzLjY1di02LjEyYzAtMy43Ny4zNC02LjQ4IDUuNC02LjEzVjZjLTIuMzYtLjE4LTQuMi4zMS01LjQ1IDEuODciIGZpbGw9InZhcigtLWNvbG9yLWxvZ28sIGJsYWNrKSIvPjxwb2x5Z29uIHBvaW50cz0iNTUuNTEgNi4xNyA1Mi44NyAxNy4xMSA1MC4wNSA2LjE3IDQ1LjQxIDYuMTcgNDIuNTkgMTcuMTEgMzkuOTUgNi4xNyAzNi4yNiA2LjE3IDQwLjMxIDIxLjgyIDQ0LjY5IDIxLjgyIDQ3LjczIDEwLjcxIDUwLjc0IDIxLjgyIDU1LjEyIDIxLjgyIDU5LjQgNi4xNyA1NS41MSA2LjE3IiBmaWxsPSJ2YXIoLS1jb2xvci1sb2dvLCBibGFjaykiLz48cGF0aCBkPSJNNjcuNDIgMTkuMDdjLTIuNTkgMC00LjUzLTIuMDUtNC41My01czItNSA0LjUzLTVTNzIgMTEgNzIgMTRzLTIgNS00LjU0IDVtMC0xMy4zNUE4LjEgOC4xIDAgMDA1OS4yNSAxNGE4LjE4IDguMTggMCAxMDE2LjM1IDAgOC4xMSA4LjExIDAgMDAtOC4xOC04LjMxbTI0LjA1IDguNDRoLjg0bDUuMDkgNy42OWg0LjExbC01Ljg1LTguNTNhNy42NiA3LjY2IDAgMDA0Ljc0LTcuMTFoLTMuNjNjMCAzLjM3LTIuNjYgNC42NS01LjMgNC42NVYwaC0zLjY1djIxLjgyaDMuNjR6IiBmaWxsPSJ2YXIoLS1jb2xvci1sb2dvLCBibGFjaykiLz48L3N2Zz4="
                           alt="Upwork logo"
